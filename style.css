@@ -302,7 +302,24 @@ body {
     .projects-scroll {
         overflow-x: auto;
         gap: 20px;
-        padding: 20px;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    /* Scrollbar maior no celular/tablet */
+    .projects-scroll::-webkit-scrollbar {
+        height: 12px;
+    }
+    .projects-scroll::-webkit-scrollbar-thumb {
+        background: #00ff88;
+        border-radius: 6px;
+    }
+    .projects-scroll::-webkit-scrollbar-track {
+        background: #222;
+    }
+
+    .phone-card {
+        flex: 0 0 300px; /* diminui levemente para caber os 3 */
     }
 
     .scroll-indicator { display: block; }
