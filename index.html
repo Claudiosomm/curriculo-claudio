@@ -33,7 +33,7 @@
 
         <div class="hero-img">
             <div class="image-box">
-                <img src="foto claudio.jpg" alt="">
+                <img src="" alt="Foto de Cláudio">
             </div>
         </div>
     </section>
@@ -44,7 +44,7 @@
 
         <div class="sobre-content">
             <div class="image-box perfil-box">
-                <img src="https://i.ibb.co/SJdYgtc/perfil.png" class="perfil-img">
+                <img src="https://i.ibb.co/SJdYgtc/perfil.png" alt="Perfil">
             </div>
 
             <div class="texto">
@@ -54,7 +54,7 @@
 
 Minha afinidade com tecnologia existe desde antes da graduação: sempre fui a pessoa responsável por formatar, atualizar, configurar e manter computadores nos ambientes onde trabalhei. Essa experiência prática reforçou minha curiosidade e me motivou a seguir definitivamente para o setor.
 
-Tenho comunicação clara, paciência, facilidade em lidar com pessoas e grande disposição para aprender. No momento, venho desenvolvendo minhas habilidades técnicas diariamente, com foco em desenvolvimento web, boas práticas, organização de código e construção de interfaces funcionais e profissionais.
+Tenho comunicação clara, paciência, facilidade em lidar com pessoas e grande disposição para aprender. Atualmente, desenvolvo habilidades técnicas diariamente, com foco em desenvolvimento web, boas práticas, organização de código e construção de interfaces funcionais e profissionais.
                 </p>
 
                 <p>
@@ -77,37 +77,40 @@ Tenho comunicação clara, paciência, facilidade em lidar com pessoas e grande 
     <section id="projetos" class="projetos">
         <h2 class="titulo">Projetos</h2>
 
-        <div class="grid">
+        <div class="mockup-container">
 
-            <div class="card">
-                <div class="image-box">
-                    <img src="https://i.ibb.co/5LqMk0p/project1.jpg" alt="">
+            <!-- CELULAR 1 -->
+            <div class="phone">
+                <div class="phone-frame">
+                    <iframe src="https://claudiosomm.github.io/atitude.f.c/" loading="lazy"></iframe>
                 </div>
-                <h3>Site de time de futebol</h3>
-                <p>Totalmente profissional.</p>
-                <a href="https://claudiosomm.github.io/atitude.f.c/" class="btn-sm" target="_blank">Ver projeto</a>
+                <button class="expand-btn" data-site="https://claudiosomm.github.io/atitude.f.c/">Expandir</button>
             </div>
 
-            <div class="card">
-                <div class="image-box">
-                    <img src="https://i.ibb.co/W0c4K8Y/project2.jpg" alt="">
+            <!-- CELULAR 2 -->
+            <div class="phone">
+                <div class="phone-frame">
+                    <iframe src="https://claudiosomm.github.io/advocacia/" loading="lazy"></iframe>
                 </div>
-                <h3>Site fictício para área do direito</h3>
-                <p>Responsivo e editável.</p>
-                <a href="https://claudiosomm.github.io/advocacia/" class="btn-sm" target="_blank">Ver projeto</a>
+                <button class="expand-btn" data-site="https://claudiosomm.github.io/advocacia/">Expandir</button>
             </div>
 
-            <div class="card">
-                <div class="image-box">
-                    <img src="https://i.ibb.co/Mh6tX2h/project3.jpg" alt="">
+            <!-- CELULAR 3 -->
+            <div class="phone">
+                <div class="phone-frame">
+                    <iframe src="https://claudiosomm.github.io/cabeleireiro_nando/" loading="lazy"></iframe>
                 </div>
-                <h3>Site fictício de cabeleireiro</h3>
-                <p>Alta conversão e design extremamente profissional.</p>
-                <a href="https://claudiosomm.github.io/cabeleireiro_nando/" class="btn-sm" target="_blank">Ver projeto</a>
+                <button class="expand-btn" data-site="https://claudiosomm.github.io/cabeleireiro_nando/">Expandir</button>
             </div>
 
         </div>
     </section>
+
+    <!-- FULLSCREEN MODAL -->
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <span class="close-fullscreen">×</span>
+        <iframe id="fullscreen-iframe"></iframe>
+    </div>
 
     <!-- CONTATO -->
     <section id="contato" class="contato">
