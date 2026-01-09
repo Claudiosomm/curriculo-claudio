@@ -33,7 +33,7 @@
 
         <div class="hero-img">
             <div class="image-box">
-                <img src="foto claudio.jpg" alt="">
+                <img src="foto claudio.jpg" alt="Foto de Cláudio">
             </div>
         </div>
     </section>
@@ -44,26 +44,26 @@
 
         <div class="sobre-content">
             <div class="image-box perfil-box">
-                <img src="https://i.ibb.co/SJdYgtc/perfil.png" class="perfil-img">
+                <img src="https://i.ibb.co/SJdYgtc/perfil.png" alt="Perfil">
             </div>
 
             <div class="texto">
                 <h3>Desenvolvedor Full Stack</h3>
                 <p>
                    Sou um profissional em transição de carreira para a área de Tecnologia, formado em Gestão de Tecnologia pela Instituição Eniac de Guarulhos. Minha trajetória começou na área de gastronomia, onde atuei com atendimento ao cliente, liderança operacional e resolução de problemas — competências que hoje fortalecem minha atuação em TI.
+
+Minha afinidade com tecnologia existe desde antes da graduação: sempre fui a pessoa responsável por formatar, atualizar, configurar e manter computadores nos ambientes onde trabalhei. Essa experiência prática reforçou minha curiosidade e me motivou a seguir definitivamente para o setor.
+
+Tenho comunicação clara, paciência, facilidade em lidar com pessoas e grande disposição para aprender. Atualmente, desenvolvo habilidades técnicas diariamente, com foco em desenvolvimento web, boas práticas, organização de código e construção de interfaces funcionais e profissionais.
                 </p>
-                <p>
-                   Minha afinidade com tecnologia existe desde antes da graduação: sempre fui a pessoa responsável por formatar, atualizar, configurar e manter computadores nos ambientes onde trabalhei. Essa experiência prática reforçou minha curiosidade e me motivou a seguir definitivamente para o setor.
-                </p>
-                <p>
-                   Tenho comunicação clara, paciência, facilidade em lidar com pessoas e grande disposição para aprender. No momento, venho desenvolvendo minhas habilidades técnicas diariamente, com foco em desenvolvimento web, boas práticas, organização de código e construção de interfaces funcionais e profissionais.
-                </p>
+
                 <p>
                     Tenho estudado e aplicado ferramentas como:
                     <strong>
                         HTML, CSS, JavaScript, TypeScript, React, Node.js, SQL e MongoDB.
                     </strong>
                 </p>
+
                 <p>
                     Meu foco é entregar projetos com alta qualidade, performance e excelente experiência de usuário.
                 </p>
@@ -77,45 +77,39 @@
     <section id="projetos" class="projetos">
         <h2 class="titulo">Projetos</h2>
 
-        <div class="projects-container">
-            <div class="projects-scroll">
-                <!-- CELULAR 1 -->
-                <div class="phone-card" data-site="https://claudiosomm.github.io/atitude.f.c/">
-                    <div class="phone-frame">
-                        <iframe src="https://claudiosomm.github.io/atitude.f.c/"></iframe>
-                        <div class="fullscreen-btn">⤢</div>
-                    </div>
-                    <h3>Site de time de futebol</h3>
-                </div>
+        <div class="mockup-container">
 
-                <!-- CELULAR 2 -->
-                <div class="phone-card" data-site="https://claudiosomm.github.io/advocacia/">
-                    <div class="phone-frame">
-                        <iframe src="https://claudiosomm.github.io/advocacia/"></iframe>
-                        <div class="fullscreen-btn">⤢</div>
-                    </div>
-                    <h3>Site fictício para área do direito</h3>
+            <!-- CELULAR 1 -->
+            <div class="phone">
+                <div class="phone-frame">
+                    <iframe src="https://claudiosomm.github.io/atitude.f.c/" loading="lazy"></iframe>
                 </div>
-
-                <!-- CELULAR 3 -->
-                <div class="phone-card" data-site="https://claudiosomm.github.io/cabeleireiro_nando/">
-                    <div class="phone-frame">
-                        <iframe src="https://claudiosomm.github.io/cabeleireiro_nando/"></iframe>
-                        <div class="fullscreen-btn">⤢</div>
-                    </div>
-                    <h3>Site fictício de cabeleireiro</h3>
-                </div>
+                <button class="expand-btn" data-site="https://claudiosomm.github.io/atitude.f.c/">Expandir</button>
             </div>
-            <div class="scroll-indicator">→ deslize para ver</div>
+
+            <!-- CELULAR 2 -->
+            <div class="phone">
+                <div class="phone-frame">
+                    <iframe src="https://claudiosomm.github.io/advocacia/" loading="lazy"></iframe>
+                </div>
+                <button class="expand-btn" data-site="https://claudiosomm.github.io/advocacia/">Expandir</button>
+            </div>
+
+            <!-- CELULAR 3 -->
+            <div class="phone">
+                <div class="phone-frame">
+                    <iframe src="https://claudiosomm.github.io/cabeleireiro_nando/" loading="lazy"></iframe>
+                </div>
+                <button class="expand-btn" data-site="https://claudiosomm.github.io/cabeleireiro_nando/">Expandir</button>
+            </div>
+
         </div>
     </section>
 
-    <!-- MODAL FULLSCREEN -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">×</span>
-            <iframe id="modal-iframe" src=""></iframe>
-        </div>
+    <!-- FULLSCREEN MODAL -->
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <span class="close-fullscreen">×</span>
+        <iframe id="fullscreen-iframe"></iframe>
     </div>
 
     <!-- CONTATO -->
