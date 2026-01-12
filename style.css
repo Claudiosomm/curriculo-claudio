@@ -1,29 +1,37 @@
 /* ===========================
-   Reset e fontes
+   FONTES PREMIUM GOOGLE
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* ===========================
+   RESET E FONTES
 =========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    /* Fundo moderno animado com gradiente roxo/azul */
-    background: linear-gradient(-45deg, #4b0082, #00bfff, #8a2be2, #1e90ff);
-    background-size: 400% 400%;
-    animation: backgroundShift 30s ease infinite;
+    background: linear-gradient(135deg, #1a1a1a, #16222A, #3A6073);
+    background-size: 300% 300%;
+    animation: backgroundShift 18s ease infinite;
     color: #fff;
 }
 
-/* Animação do fundo */
+/* ===========================
+   ANIMAÇÃO DE FUNDO
+=========================== */
 @keyframes backgroundShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* HEADER */
+/* ===========================
+   HEADER
+=========================== */
 .header {
     width: 100%;
     padding: 20px 40px;
@@ -49,15 +57,35 @@ body {
     display: flex;
     gap: 25px;
 }
+
 .nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s, text-shadow 0.3s;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 3px;
+    transition: 0.3s ease;
 }
-.nav a:hover { 
+
+.nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00ffcc;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
     color: #00ff88;
     text-shadow: 0 0 8px #00ff88;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }
 
 .mobile-btn {
@@ -66,7 +94,9 @@ body {
     display: none;
 }
 
-/* HERO */
+/* ===========================
+   HERO
+=========================== */
 .hero {
     padding: 140px 40px 80px;
     display: flex;
@@ -81,12 +111,17 @@ body {
     flex: 1;
 }
 
-.hero-text h1 { 
-    font-size: 40px; 
+.hero-text h1 {
+    font-size: 46px;
     line-height: 1.2;
-    text-shadow: 0 2px 10px rgba(0,255,136,0.4);
+    font-weight: 700;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.45);
 }
-.hero-text span { color: #00ff88; }
+
+.hero-text span {
+    color: #00ffcc;
+    text-shadow: 0 0 12px rgba(0,255,200,0.7);
+}
 
 .hero-text p {
     margin-top: 15px;
@@ -96,20 +131,21 @@ body {
 
 .btn {
     display: inline-block;
-    background: #00ff88;
-    padding: 12px 26px;
+    background: linear-gradient(45deg, #00ffcc, #00b8ff);
+    padding: 12px 28px;
     color: #000;
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0,255,200,0.5);
+    transition: 0.3s ease, transform 0.3s;
 }
 
 .btn:hover {
     background: #00cc66;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,255,136,0.5);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,255,136,0.7);
 }
 
 .hero-img {
@@ -141,15 +177,25 @@ body {
     object-fit: cover;
 }
 
-/* SOBRE */
+/* ===========================
+   SOBRE
+=========================== */
 .sobre {
     padding: 110px 40px;
     text-align: center;
 }
 
-.sobre .titulo { 
+.sobre .titulo {
     margin-bottom: 50px;
     text-shadow: 0 2px 8px rgba(138,43,226,0.5);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.45);
 }
 
 .sobre-content {
@@ -167,15 +213,21 @@ body {
     letter-spacing: 0.2px;
 }
 
+p {
+    hyphens: auto;       /* Hifeniza automaticamente, se necessário */
+    word-break: break-word; /* Quebra palavras longas se precisar */
+}
+
+
 .perfil-box {
     width: 260px;
     height: 260px;
-    border-radius: 12px;
+    border-radius: 20px;
     overflow: hidden;
     background: rgba(255,255,255,0.05);
-    box-shadow: 0 12px 30px rgba(138,43,226,0.6);
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(0,255,200,0.3);
+    box-shadow: 0 12px 30px rgba(0,255,200,0.3);
+    transition: 0.3s ease, transform 0.3s, box-shadow 0.3s;
 }
 
 .perfil-box:hover {
@@ -189,13 +241,14 @@ body {
     object-fit: cover;
 }
 
-/* Centralizar botão "Baixar Currículo" */
 .texto .btn {
     display: block;
     margin: 20px auto 0 auto;
 }
 
-/* PROJETOS */
+/* ===========================
+   PROJETOS
+=========================== */
 .projetos {
     padding: 80px 40px;
     text-align: center;
@@ -206,7 +259,6 @@ body {
     text-shadow: 0 2px 10px rgba(0,191,255,0.4);
 }
 
-/* CELULARES HORIZONTAIS */
 .projects-container {
     position: relative;
     padding: 20px 0;
@@ -229,12 +281,10 @@ body {
 .projects-scroll::-webkit-scrollbar {
     height: 10px;
 }
-
 .projects-scroll::-webkit-scrollbar-thumb {
     background: #00ff88;
     border-radius: 5px;
 }
-
 .projects-scroll::-webkit-scrollbar-track {
     background: rgba(0,0,0,0.2);
 }
@@ -268,16 +318,10 @@ body {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.phone-frame:hover {
-    box-shadow: 0 15px 45px rgba(0,191,255,0.8);
-}
-
 .phone-frame iframe {
     width: 100%;
     height: 100%;
     border: none;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .phone-card h3 {
@@ -288,7 +332,6 @@ body {
     color: #fff;
 }
 
-/* Botão Fullscreen */
 .fullscreen-btn {
     position: absolute;
     bottom: 10px;
@@ -309,7 +352,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Scroll indicator (aparece só no celular) */
 .scroll-indicator {
     display: none;
     position: absolute;
@@ -320,7 +362,9 @@ body {
     font-weight: bold;
 }
 
-/* MODAL FULLSCREEN */
+/* ===========================
+   MODAL FULLSCREEN
+=========================== */
 .modal {
     position: fixed;
     top: 0;
@@ -367,13 +411,17 @@ body {
 
 .close:hover { color: #ff4444; }
 
-/* CONTATO */
+/* ===========================
+   CONTATO
+=========================== */
 .contato {
     padding: 80px 40px;
     text-align: center;
 }
 
-/* FOOTER */
+/* ===========================
+   FOOTER
+=========================== */
 .footer {
     padding: 20px;
     background: rgba(0,0,0,0.7);
@@ -382,13 +430,14 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* RESPONSIVIDADE */
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
 @media (max-width: 1024px) {
     .projects-scroll {
         gap: 20px;
         padding: 20px;
     }
-
     .scroll-indicator { display: block; }
 }
 
@@ -399,11 +448,6 @@ body {
     .hero-img .image-box { height: 250px; }
     .sobre-content { flex-direction: column; align-items: center; }
     .phone-card { flex: 0 0 280px; height: 500px; } 
-}
-
-/* ===== MENU MOBILE RESPONSIVO ===== */
-@media (max-width: 768px) {
-
     .nav {
         position: absolute;
         top: 80px;
@@ -421,17 +465,6 @@ body {
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
-
-    /* Quando abrir */
-    .nav.open {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* Mostrar botão hamburger */
-    .mobile-btn {
-        display: block;
-    }
+    .nav.open { transform: translateX(0); opacity: 1; visibility: visible; }
+    .mobile-btn { display: block; }
 }
-
